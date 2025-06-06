@@ -1,0 +1,550 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    width: 111px;
+    height: 98px;
+    margin-top: 51px;
+    margin-left: 66px;
+}
+
+.smartmatch {
+    display: flex;
+    transform: translateX(30px);
+    margin-top: 110px;
+}
+
+.smartmatch h5 {
+    color: var(--Black, #141720);
+    font-family: Jura;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; 
+}
+
+.smartmatch img {
+    width: 51px;
+    height: 24px;
+    border-radius: 15px;
+    background: var(--Light-Blue, #54C4FC);
+    transform: translateX(10px);
+    margin-top: 5px;
+}
+
+.ornament {
+    margin-left: 30px;
+}
+
+.nav-bar {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    display: flex;
+    gap: 15px;
+    margin-top: 90px;
+    margin-left: -60px;
+}
+
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+#home {
+    color: #54C4FC;
+}
+
+.akun {
+    display: flex;
+    margin-top: 90px;
+    border: 2px solid #54C4FC;
+    border-radius: 5px;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+}
+
+.akun img {
+    width: 24px;
+    height: 24px;
+}
+
+.akun p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.container {
+    position: relative;
+    width: 1340px;
+    height: 590px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border-bottom: 1px solid #3A3A3A;
+    background: #3A3A3A;
+    margin-top: 20px;
+}
+
+.block h1 {
+    position: absolute;
+    width: 580px;
+    height: 269.852px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 71.429px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 50px;
+    margin-top: 130px;
+    z-index: 2;
+}
+
+.blue-box {
+    position: absolute;
+    width: 428px;
+    height: 73.508px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    border: 1px solid #3A3A3A;
+    background: #58C9D9;
+    margin-left: 35px;
+    transform: translateY(230px);
+    z-index: 1;
+}
+
+.right-image img {
+    width: 481.385px;
+    height: 602px;
+    flex-shrink: 0;
+    aspect-ratio: 481.38/602.00;
+    background: url(<path-to-image>) #3A3A3A  / cover no-repeat;
+    margin-left: 600px;
+}
+
+.fundt {
+    display: flex;
+}
+
+.balance {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 242px;
+    align-items: center;
+    gap: 56px;
+    flex-shrink: 0;
+    border-radius: 11.404px;
+    background: var(--Light-Blue, #54C4FC);
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.balance label, .invested label {
+    color: var(--white, #FFF);
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20.583px;
+    margin-top: 40px;
+    margin-left: -200px; 
+}
+
+.invested label {
+    margin-top: -140px;
+    margin-left: 15px;
+}
+
+.balance h5, .invested h5 {
+    flex: 1 0 0;
+    color: var(--white, #FFF);
+    font-family: Jura;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27.444px; 
+    margin-left: -170px;
+    margin-top: -10px;
+}
+
+.invested h5 {
+    margin-top: 10px;
+    transform: translateX(-120px);
+}
+
+.balance p, .invested p {
+    color: var(--white, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.437px; 
+    transform: translateY(-20px);
+    margin-left: -350px;
+}
+
+.invested p {
+    margin-top: 150px;
+    transform: translateX(-120px);
+}
+
+.balance h6, .invested h6 {
+    color: var(--white, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+    margin-top: -100px;
+    transform: translateY(10px);
+    margin-left: -160px;
+}
+
+.invested h6 {
+    margin-top: 180px;
+    transform: translateX(-97px);
+}
+
+.balance label, .balance h5, .balance p, .balance h6,
+.invested label, .invested h5, .invested p, .invested h6 {
+    margin-right: 30px;
+}
+
+#union {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    fill: var(--White, #FFF);
+    margin-top: -230px;
+    margin-left: 200px;
+}
+
+#union-invested {
+    margin-top: -145px;
+    transform: translateX(-5px);
+}
+
+#coin {
+    width: 266.844px;
+    height: 266.844px;
+    aspect-ratio: 266.84/266.84;
+    position: absolute;
+    right: -56.425px;
+    bottom: -58.754px;
+    background: url(<path-to-image>) #54C4FC / cover no-repeat;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.invested {
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 242px;
+    padding: 22.807px 19.006px;
+    align-items: center;
+    gap: 56px;
+    flex-shrink: 0;
+    border-radius: 11.404px;
+    background: var(--Warning, #FC0);
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.direct-fund {
+    width: 684px;
+    height: 506px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 2px solid #58C9D9;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.direct-fund label {
+    width: 354px;
+    height: 27px;
+    flex-shrink: 0;
+    color: var(--1E1E2D, #1E1E2D);
+    font-family: Jura;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; 
+    padding: 40px;
+}
+
+.direct-fund h3 {
+    width: 88.425px;
+    height: 21px;
+    flex-shrink: 0;
+    color: #808191;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; 
+    margin-left: 560px;
+    margin-top: -35px;
+}
+
+.identitas-2, .identitas-3 {
+    margin-top: 70px;
+}
+
+.identitas img, .identitas-2 img, .identitas-3 img {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 36px;
+    border: 1.2px solid #FFF;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.identitas-2 img, .identitas-3 img {
+    opacity: 30%;
+}
+
+.status h5, .status-2 h5, .status-3 h5 {
+    align-self: stretch;
+    color: var(--1E1E2D, #1E1E2D);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    margin-left: 85px;
+    margin-top: -35px;
+}
+
+.status-2 h5, .status-3 h5 {
+    opacity: 30%;
+}
+
+.status h6, .status-2 h6, .status-3 h6 {
+    align-self: stretch;
+    color: var(--1E1E2D, #1E1E2D);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; 
+    margin-left: 85px;
+    margin-top: -5px;
+}
+
+.status-2 h6 {
+    color: var(--Success, #34C759);
+    opacity: 30%;
+}
+
+.status-3 h6 {
+    color: var(--Danger, #FF3B30);
+    opacity: 30%;
+}
+
+.identitas p, .identitas-2 p, .identitas-3 p {
+    color: var(--1E1E2D, #1E1E2D);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13.714px; 
+    margin-left: 500px;
+    margin-top: -30px;
+}
+
+.identitas-2 p, .identitas-3 p {
+    opacity: 30%;
+}
+
+.ads label {
+    color: #141720;
+    font-family: Jura;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.ads h5 {
+    color: var(--Secondary-text, #808191);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 1050px;
+    margin-top: -30px;
+}
+
+.premium {
+    display: flex;
+}
+
+.days, .weekly, .monthly {
+    width: 322px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--Light-Blue, #54C4FC);
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.weekly {
+    transform: translateX(-130px);
+}
+
+.monthly {
+    transform: translateX(-260px);
+}
+
+.days label, .weekly label, .monthly label {
+    align-self: stretch;
+    color: var(--White, #FFF);
+    font-family: Jura;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px;
+}
+
+.days h5, .weekly h5, .monthly h5 {
+    align-self: stretch;
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+.days img, .weekly img, .monthly img {
+    width: 300.918px;
+    height: 300.918px;
+    flex-shrink: 0;
+    aspect-ratio: 300.92/300.92;
+    background: url(<path-to-image>) #54C4FC / cover no-repeat;
+    margin-top: -60px;
+    margin-left: 50px;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    background-color: #000;
+    margin-top: 50px;
+}
+
+footer img {
+    position: absolute;
+    width: 69.891px;
+    height: 69.891px;
+    flex-shrink: 0;
+    fill: var(--White, #FFF);
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.left-footer {
+    display: flex;
+    align-items: center;
+}
+
+.left-footer h6 {
+    width: 69px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Jura;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: translateY(120px);
+    margin-left: 150px;
+}
+
+.left-footer p {
+    width: 278px;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    transform: translateY(165px);
+    margin-left: -70px;
+}
+
+.socmed img {
+    width: 144.838px;
+    height: 19.891px;
+    transform: translateY(90px);
+    margin-left: -280px;
+}
+
+.left-footer h1 {
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 53.935px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: translateY(100px);
+    margin-left: -180px;
+}
+
+.right-footer {
+    margin-right: 200px;
+    margin-top: -15px;
+}
+
+.right-footer h5 {
+    align-self: stretch;
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; 
+    text-align: right;
+    margin-right: 25px;
+}
+
+.pricing {
+    margin-left: 950px;
+}
+
+.pricing h6 {
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    opacity: 0.75;
+}
+
+

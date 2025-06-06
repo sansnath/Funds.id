@@ -1,0 +1,169 @@
+* {
+    font-family: Poppins;
+}
+
+section img {
+    width: 387px;
+    height: 99px;
+    margin-right: 770px;
+    padding: 7px;
+    flex-shrink: 0;
+}
+
+div.based-content {
+    position: relative;
+    flex-shrink: 0;
+}
+
+div.top-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.form-image {
+    margin-left: 90px;
+    margin-top: 50px;
+    width: 505px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.logo-funds{
+    margin-left: 210px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.form-image img {
+    margin-left: -10px;
+    margin-top: 10px;
+    width: 600px;
+    height: 505px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.form-content {
+    margin-left: 0px;
+    width: 600px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.login-title {
+color: var(--Black, #141720);
+text-align: center;
+font-family: Jura;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.selection-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.option-box {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #D1D1D1;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dashed gray; /* border putus-putus */
+  border-radius: 10px;
+}
+
+.icon-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.option-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.option-box.active[data-role="investor"] {
+  background-color: rgba(84, 196, 252, 0.15); /* biru muda transparan */
+  border-color: #54C4FC;
+  border: 2px dashed #54C4FC; /* border putus-putus */
+  border-radius: 10px;
+}
+
+.option-box.active[data-role="investor"] .option-label {
+  color: #54C4FC;
+}
+
+.option-box.active[data-role="investor"] .icon {
+  filter: brightness(1.1);
+}
+
+
+.option-box.active[data-role="umkm"] {
+  background-color: rgba(84, 196, 252, 0.15); /* biru muda transparan */
+  border-color: #54C4FC;
+  border: 2px dashed #54C4FC; /* border putus-putus */
+  border-radius: 10px;
+}
+
+.option-box.active[data-role="umkm"] .option-label {
+  color: #54C4FC;
+}
+
+.option-box.active[data-role="umkm"] .icon {
+  filter: brightness(1.1);
+}
+
+
+.button-login {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 400px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: #54C4FC;
+    margin-top: 60px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    margin-top: 30px;
+}
+
+div a {
+    display: block;
+    text-decoration: none;
+}
+

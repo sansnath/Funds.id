@@ -1,0 +1,337 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    width: 111px;
+    height: 98px;
+    margin-top: 51px;
+    margin-left: 66px;
+}
+
+.ornament {
+    margin-left: 130px;
+}
+
+.nav-bar {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    display: flex;
+    gap: 15px;
+    margin-top: 90px;
+    margin-left: -60px;
+}
+
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+#chat {
+    color: #54C4FC;
+}
+
+.akun {
+    display: flex;
+    margin-top: 90px;
+    border: 2px solid #54C4FC;
+    border-radius: 5px;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+}
+
+.akun img {
+    width: 24px;
+    height: 24px;
+}
+
+.akun p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.title-umkm {
+    text-align: center;
+}
+
+.title-umkm h1 {
+    font-family: 'Jura', sans-serif;
+    margin-top: 30px;
+    font-size: 64px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 993px;
+    height: 677px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid var(--SuperLight-Grey, #F0F0F0);
+    background: var(--White, #FFF);
+    box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.10);
+}
+
+.container img {
+    position: absolute;
+    height: 465px;
+    width: 727px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 9.75px 9.75px 0px 0px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin-top: 30px;
+}
+
+.container h4 {
+    position: absolute;
+    align-self: stretch;
+    color: var(--Black, #141720);
+    font-family: 'Jura', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 510px;
+    margin-right: 520px;
+}
+
+.container h5 {
+    position: absolute;
+    align-self: stretch;
+    color: var(--Secondary-text, #808191);
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 560px;
+    margin-right: 495px;
+}
+
+.transaction {
+    display: flex;
+    gap: 20px;
+}
+
+.profit img {
+    display: flex;
+    width: 584px;
+    height: 402px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.data-keuangan label {
+    align-self: stretch;
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: 'Jura', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    margin-top: 55px;
+}
+
+.inside-data {
+    display: flex;
+    gap: 60px;
+}
+
+.omzet h5, .margin h5, .untung h5, .valuasi h5 {
+    width: 238px;
+    color: var(--Secondary-text, #808191);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Jura;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.omzet p, .margin p, .untung p, .valuasi p {
+    align-self: stretch;
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: -5px;
+}
+
+.return label {
+    width: 518px;
+    color: var(--Secondary-text, #808191);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Jura;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.return p {
+    width: 267px;
+    color: #000;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.deskripsi-umkm label {
+    align-self: stretch;
+    color: var(--Black, #141720);
+    font-family: Jura;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-left: 230px;
+}
+
+.deskripsi-umkm p {
+    height: 370px;
+    width: 852px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: var(--Secondary-text, #808191);
+    text-align: justify;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; 
+    letter-spacing: 1px;
+    margin-left: 230px;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    background-color: #000;
+}
+
+footer img {
+    position: absolute;
+    width: 69.891px;
+    height: 69.891px;
+    flex-shrink: 0;
+    fill: var(--White, #FFF);
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.left-footer {
+    display: flex;
+    align-items: center;
+}
+
+.left-footer h6 {
+    width: 69px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Jura;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: translateY(120px);
+    margin-left: 150px;
+}
+
+.left-footer p {
+    width: 278px;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    transform: translateY(165px);
+    margin-left: -70px;
+}
+
+.socmed img {
+    width: 144.838px;
+    height: 19.891px;
+    transform: translateY(90px);
+    margin-left: -280px;
+}
+
+.left-footer h1 {
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 53.935px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: translateY(100px);
+    margin-left: -180px;
+}
+
+.right-footer {
+    margin-right: 200px;
+    margin-top: -15px;
+}
+
+.right-footer h5 {
+    align-self: stretch;
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; 
+    text-align: right;
+    margin-right: 25px;
+}
+
+.pricing {
+    margin-left: 950px;
+}
+
+.pricing h6 {
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    opacity: 0.75;
+}

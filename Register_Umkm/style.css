@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #fff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 50px;
+  }
+  
+.toggle-auth {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 999px;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: fit-content;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.auth-tab {
+    border: none;
+    background: transparent;
+    padding: 10px 30px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.auth-tab.active {
+    background-color:black;
+    color: white;
+}
+
+.login-title {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+    background: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 33px;
+    margin-top: -80px;
+}
+
+
+  .image-section {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mascot-image {
+    margin-top: 140px;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding: 10px;
+    width: 496px;
+  }
+  
+  .form-section h1,
+  .form-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-section p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .button-group {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .button-group button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .button-group .active {
+    background: #000;
+    color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="date"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .upload-box {
+    border: 2px dashed #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .upload-box img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  
+.bank-select {
+  position: relative; /* penting agar anak-anak bisa absolute */
+  display: flex;
+  align-items: center;
+}
+
+.bank-select img {
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: auto;
+  z-index: 2;
+  pointer-events: none; /* agar tidak menghalangi inputan */
+}
+
+.bank-select input {
+  padding-left: 100px; /* beri jarak agar teks tidak nabrak gambar */
+  width: 80%;
+  height: 40px;
+  z-index: 1;
+  margin-left: 69px;
+}
+
+.next-btn {
+    background: #54c4fc;
+    color: #fff;
+    border: none;
+    padding: 12px 50px;
+    margin-top: 20px;
+    border-radius: 4px;
+    width: 575px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 7px;
+  }
+  
+  /* Risk Profile Style */
+  .risk-option {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 60px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .risk-option:hover {
+    border-style: solid;
+    background-color: #f9f9f9;
+  }
+  
+  .low {
+    border-color: #3ccf4e;
+    color: #3ccf4e;
+  }
+  
+  .medium {
+    border-color: #ffc107;
+    color: #ffc107;
+  }
+  
+  .high {
+    border-color: #f44336;
+    color: #f44336;
+  }
+  
+  /* UMKM Selection Page Style */
+#umkm-section .form-section form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .umkm-option {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 16px;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    position: relative;
+  }
+  
+  .umkm-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #54c4fc; /* Chrome support */
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  .umkm-option:hover {
+    background-color: #e6f5ff;
+    border-color: #54c4fc;
+  }
+  
+  /* Checkbox checked effect */
+  .umkm-option input[type="checkbox"]:checked + span {
+    background-color: transparent;
+    font-weight: 600;
+  }
+  
+  /* Apply background to parent when checked */
+  .umkm-option input[type="checkbox"]:checked ~ span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d4efff;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  
+  .umkm-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .umkm-option:hover {
+    background-color: #f3f9ff;
+  }
+  
+  form textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 141px;
+}
+
+ #deskripsi {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 141px;
+  }
+
+
+ #deskripsi2 {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 94px;
+  }
+
+
+.upload-box {
+  border: 2px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #000;
+  background-color: #f9f9f9;
+}
+
+.upload-box img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}

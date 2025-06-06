@@ -1,0 +1,272 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    width: 111px;
+    height: 98px;
+    margin-top: 51px;
+    margin-left: 66px;
+}
+
+.ornament {
+    margin-left: 130px;
+}
+
+.nav-bar {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    display: flex;
+    gap: 15px;
+    margin-top: 90px;
+    margin-left: -60px;
+}
+
+.nav-bar a {
+    color: black;
+    text-decoration: none;
+}
+
+#chat {
+    color: #54C4FC;
+}
+
+.akun {
+    display: flex;
+    margin-top: 90px;
+    border: 2px solid #54C4FC;
+    border-radius: 5px;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+}
+
+.akun img {
+    width: 24px;
+    height: 24px;
+}
+
+.akun p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.title-chat {
+    display: flex;
+    margin-top: 50px;
+}
+
+.title-chat h1 {
+    color: var(--Black, #141720);
+    font-family: 'Jura', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; 
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+.title-chat img {
+    width: 20.001px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 40px;
+    margin-left: 730px;
+}
+
+.umkm {
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+.depot-sahadja, .nasgor-168, .ayam-2s, .abah-acil, 
+.djaya-baru, .kebab-baba, .preksu, .po-kang {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.depot-sahadja img, .nasgor-168 img, .ayam-2s img, .abah-acil img , 
+.djaya-baru img, .kebab-baba img, .preksu img, .po-kang img {
+    width: 214px;
+    height: 160px;
+    border-radius: 10px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.depot-sahadja label, .nasgor-168 label, .ayam-2s label, .abah-acil label, 
+.djaya-baru label, .kebab-baba label, .preksu label, .po-kang label {
+    width: 429px;
+    flex-shrink: 0;
+    color: #303030;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; 
+    letter-spacing: 0.448px;
+    margin-top: 10px;
+}
+
+.djaya-baru label {
+    width: 500px;
+}
+
+.depot-sahadja h5, .nasgor-168 h5, .ayam-2s h5, .abah-acil h5, 
+.djaya-baru h5, .kebab-baba h5, .preksu h5, .po-kang h5 {
+    width: 445px;
+    height: 42px;
+    flex-shrink: 0;
+    color: var(--Secondary-text, #808191);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.336px;
+}
+
+.depot-sahadja label, .depot-sahadja h5,
+.nasgor-168 label, .nasgor-168 h5,
+.ayam-2s label, .ayam-2s h5,
+.abah-acil label, .abah-acil h5,
+.djaya-baru label, .djaya-baru h5,
+.kebab-baba label, .kebab-baba h5,
+.preksu label, .preksu h5,
+.po-kang label, .po-kang h5 {
+    margin-left: 250px;
+    transform: translateY(-190px);
+}
+
+.depot-sahadja p, .nasgor-168 p, .ayam-2s p, .abah-acil p, 
+.djaya-baru p, .kebab-baba p, .preksu p, .po-kang p {
+    width: 116px;
+    flex-shrink: 0;
+    color: #686A8A;
+    text-align: right;
+    font-family: ABeeZee;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.226px;
+    margin-left: 800px;
+    transform: translateY(-325px);
+}
+
+.nasgor-168, .ayam-2s, .abah-acil, .djaya-baru, 
+.kebab-baba {
+    margin-top: -160px;
+}
+
+.preksu, .po-kang {
+    margin-top: -190px;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    background-color: #000;
+}
+
+footer img {
+    position: absolute;
+    width: 69.891px;
+    height: 69.891px;
+    flex-shrink: 0;
+    fill: var(--White, #FFF);
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.left-footer {
+    display: flex;
+    align-items: center;
+}
+
+.left-footer h6 {
+    width: 69px;
+    height: 30px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Jura;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: translateY(120px);
+    margin-left: 150px;
+}
+
+.left-footer p {
+    width: 278px;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    transform: translateY(165px);
+    margin-left: -70px;
+}
+
+.socmed img {
+    width: 144.838px;
+    height: 19.891px;
+    transform: translateY(90px);
+    margin-left: -280px;
+}
+
+.left-footer h1 {
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 53.935px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: translateY(100px);
+    margin-left: -180px;
+}
+
+.right-footer {
+    margin-right: 200px;
+    margin-top: -15px;
+}
+
+.right-footer h5 {
+    align-self: stretch;
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; 
+    text-align: right;
+    margin-right: 25px;
+}
+
+.pricing {
+    margin-left: 950px;
+}
+
+.pricing h6 {
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    opacity: 0.75;
+}

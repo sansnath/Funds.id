@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up Investor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="signup-section" class="container">
+  <div class="image-section">
+    <img src="img/ChatGPT Image Apr 28, 2025, 10_50_27 PM 2.png" alt="Mascot" class="mascot-image" />
+  </div>
+
+  <div class="form-section">
+    <div>
+            <div class="login-title">Sign Up</div>
+    </div>
+    <div class="toggle-auth">
+            <button type="button" class="auth-tab ">Sign in</button>
+            <button type="button" class="auth-tab active">Sign up</button>
+          </div>
+
+    <form id="signup-form">
+      <label for="name">Nama Lengkap</label>
+      <input type="text" id="name" placeholder="Nama Lengkap" />
+
+      <label for="nik">NIK</label>
+      <input type="text" id="nik" placeholder="23XXXXXXXXX" />
+
+      <label for="ktp">Foto KTP *</label>
+      <div class="upload-box">
+        <img src="img/inbox-tray-1--mail-email-outbox-drawer-empty-open-inbox-arrow-down.jpg" alt="Upload Icon" />
+        <p>Unggah Foto KTP</p>
+      </div>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="jevon@gmail.com" />
+
+      <label for="phone">Nomor HP *</label>
+      <input type="tel" id="phone" placeholder="08XXXXXXXXXX" />
+
+      <label for="dob">Tanggal Lahir *</label>
+      <input type="date" id="dob" />
+
+      <label for="bank">Rekening Bank *</label>
+      <div class="bank-select">
+        <img src="img/Frame 2108.png" alt="Bank Icon" />
+        <input type="text" id="bank" placeholder="23123XXXXXX" />
+      </div>
+
+      <button type="button" class="next-btn" onclick="showRiskPage()">Next</button>
+    </form>
+  </div>
+</div>
+
+<div id="risk-section" class="container" style="display: none;">
+  <div class="image-section">
+    <img src="img/ChatGPT Image Apr 28, 2025, 10_50_27 PM 2.png" alt="Mascot" class="mascot-image" />
+  </div>
+
+    <div class="form-section">
+      <h2>Pendaftaran Investor</h2>
+      <p>Tentukan profil risiko investasi anda</p>
+
+  <div class="risk-selection-boxes">
+    <div class="risk-option low" data-risk="low">
+      <img src="img/bill-1--billing-bills-payment-finance-cash-currency-money-accounting.png" class="icon" />
+      <span>Risiko Rendah</span>
+    </div>
+
+    <div class="risk-option medium" data-risk="medium">
+      <img src="img/bill-1--billing-bills-payment-finance-cash-currency-money-accounting (1).png" class="icon" />
+      <span>Risiko Sedang</span>
+    </div>
+
+    <div class="risk-option high" data-risk="high">
+      <img src="img/bill-1--billing-bills-payment-finance-cash-currency-money-accounting (2).png" class="icon" />
+      <span>Risiko Tinggi</span>
+    </div>
+  </div>
+
+    <button class="next-btn">Lanjut</button>
+  </div>
+</div>
+
+<script>
+  function showRiskPage() {
+    document.getElementById('signup-section').style.display = 'none';
+    document.getElementById('risk-section').style.display = 'flex';
+  }
+</script>
+
+<div id="umkm-section" class="container" style="display: none;">
+    <div class="image-section">
+      <img src="img/ChatGPT Image Apr 28, 2025, 10_50_27 PM 2.png" alt="Mascot" class="mascot-image" />
+    </div>
+  
+    <div class="form-section">
+      <h2>Pendaftaran Investor</h2>
+      <p>Pilih bidang UMKM yang diminati</p>
+  
+      <form id="umkm-form">
+        <label class="umkm-option">
+          <input type="checkbox" name="umkm" value="food" />
+          <span>Food and Beverages</span>
+        </label>
+  
+        <label class="umkm-option">
+            <input type="checkbox" name="umkm" value="retail" />
+            <span>Retail</span>
+          </label>
+          
+          <label class="umkm-option">
+            <input type="checkbox" name="umkm" value="fashion" />
+            <span>Fashion</span>
+          </label>          
+  
+        <label class="umkm-option">
+          <input type="checkbox" name="umkm" value="agribisnis" />
+          <span>Agribisnis</span>
+        </label>
+  
+        <label class="umkm-option">
+          <input type="checkbox" name="umkm" value="lainnya" />
+          <span>Lainnya</span>
+        </label>
+  
+        <button type="button" class="next-btn" onclick="window.location.href='/Funds.id/Home - Investor/index3.html'">Kirim</button>
+      </form>
+    </div>
+  </div>
+  
+<script>
+  function showRiskPage() {
+    document.getElementById('signup-section').style.display = 'none';
+    document.getElementById('risk-section').style.display = 'flex';
+  }
+</script>
+
+  <script>
+    const lanjutBtn = document.querySelector('#risk-section .next-btn');
+    lanjutBtn.addEventListener('click', () => {
+      document.getElementById('risk-section').style.display = 'none';
+      document.getElementById('umkm-section').style.display = 'flex';
+    });
+  </script>  
+
+
+<script>
+  const riskOptions = document.querySelectorAll('.risk-option');
+  riskOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      riskOptions.forEach(o => o.classList.remove('active'));
+      option.classList.add('active');
+    });
+  });
+</script>
+
+
+  
+</body>
+</html>
