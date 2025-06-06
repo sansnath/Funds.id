@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #fff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 50px;
+  }
+  
+.toggle-auth {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 999px;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: fit-content;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.auth-tab {
+    border: none;
+    background: transparent;
+    padding: 10px 30px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.auth-tab.active {
+    background-color:black;
+    color: white;
+}
+
+.login-title {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+    background: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 33px;
+}
+
+
+  .image-section {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mascot-image {
+    margin-top: 100px;
+    max-width: 80%;
+    height: auto;
+  }
+  
+  .form-section {
+    flex: 1;
+    padding: 10px;
+    width: 496px;
+  }
+  
+  .form-section h1,
+  .form-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-section p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .button-group {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .button-group button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .button-group .active {
+    background: #000;
+    color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="date"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: white;
+  appearance: none; /* Untuk menghilangkan panah default di beberapa browser */
+}
+
+.dropdown-arrow {
+  font-size: 14px;
+  margin-left: 100px;
+  color: #666;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 578px;
+  margin-top: 10px;
+}
+
+.custom-select label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.custom-select select {
+  width: 100%;
+  padding: 8px 40px 8px 12px; /* padding kanan untuk arrow */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: white url('data:image/svg+xml;utf8,<svg fill="black" height="12" viewBox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 12px center;
+  background-size: 12px 12px;
+  cursor: pointer;
+}
+
+.custom-select select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 3px #007bff;
+}
+
+
+
+.next-btn {
+    background: #54c4fc;
+    color: #fff;
+    border: none;
+    padding: 12px 50px;
+    margin-top: 20px;
+    border-radius: 4px;
+    width: 575px;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  
